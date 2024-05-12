@@ -25,7 +25,7 @@
     </nav>
 
     <div class="d-flex align-items-center mt-5 justify-content-center">
-        <h1 class="text-center">Bootstrap Project 1 Navbar</h1>
+        <h1 class="text-center">Bootstrap Navbar Slide Toggle</h1>
     </div>
     <!-- Model -->
 
@@ -36,7 +36,7 @@
                     <button type="button" class="btn-close fs-5" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body d-flex justify-content-center align-items-center text-center flex-column">
-                    <h1 class="mb-5">C O M P A N Y - L O G O</h1>
+                    <h1 class="mb-5"><kbd>C O M P A N Y - L O G O</kbd></h1>
                     <a class=" h4 text-decoration-none text-warning" href="">H O M E</a>
                     <a class=" h4 text-decoration-none text-reset" href="">A B O U T</a>
                     <a class=" h4 text-decoration-none text-reset" href="">B L O G</a>
@@ -59,8 +59,9 @@
     <script>
         $(document).ready(function () {
             $("#exampleModalFullscreen").hide();
+
             $("body > nav > div > button, #exampleModalFullscreen > div > div > div> button").on("click", function () {
-                $("#exampleModalFullscreen").toggle();
+                $("#exampleModalFullscreen").slideToggle();
             });
         });
     </script>
